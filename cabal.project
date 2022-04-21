@@ -3,3 +3,5 @@ source-repository-package
     type: git
     location: https://github.com/zgrannan/rest
     tag: 9637b77823ef3ceb909510cad2508e828767f6fb
+package liquid-fixpoint
+    ghc-options: -fwrite-ide-info -hiedir=.hie

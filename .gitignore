@@ -32,3 +32,4 @@ Session.vim
 /TAGS
 /tags
 *.swp
+*.hie
