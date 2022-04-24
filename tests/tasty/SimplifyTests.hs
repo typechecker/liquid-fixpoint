@@ -19,8 +19,9 @@ import Test.Tasty.QuickCheck
     counterexample,
     label,
     testProperty,
-    (===),
+    (===), (==>),
   )
+import InterpretTests (divZero)
 
 tests :: TestTree
 tests =
@@ -34,7 +35,7 @@ tests =
     withOptions tests = localOption (QuickCheckMaxSize 4) (localOption (QuickCheckTests 500) tests)
 
 prop_no_increase :: (Expr -> Expr) -> Expr -> Property
-prop_no_increase f e =
+prop_no_increase f e = not (divZero e) ==>
   let originalSize = exprSize e
       simplified = f e
       simplifiedSize = exprSize simplified
