@@ -9,4 +9,4 @@ constraint:
   env [ 0 ]
   lhs {v : int | v = a}
   rhs {v : int | 10 <= v}
-  id 3 
+  id 3

@@ -20,4 +20,4 @@ wf:
   env []
   reft {v0 : int | $k0}
 
-//  K0(v, b) => b <= v+1   
+//  K0(v, b) => b <= v+1

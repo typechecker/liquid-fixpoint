@@ -1,11 +1,11 @@
 fixpoint "--rewrite"
 
-data Peano 0 = [ 
+data Peano 0 = [
   | Zero {}
-  | S {prev : Peano} 
+  | S {prev : Peano}
   ]
 
-data BBool 0 = [ 
+data BBool 0 = [
   | BTrue {}
   | BFalse {}
   ]
@@ -18,13 +18,13 @@ define negb (x:BBool) : BBool = {
 }
 
 define even (x:Peano) : BBool = {
-  if (is$Zero x) then BTrue else 
-  if (is$Zero (prev x)) then BFalse else 
+  if (is$Zero x) then BTrue else
+  if (is$Zero (prev x)) then BFalse else
   even (prev (prev x))
 }
 
 
-bind 0 n : {v: Peano | not (is$Zero v) && is$S v && not (is$S (prev v)) && is$Zero (prev v) } 
+bind 0 n : {v: Peano | not (is$Zero v) && is$S v && not (is$S (prev v)) && is$Zero (prev v) }
 
 constraint:
   env [0]

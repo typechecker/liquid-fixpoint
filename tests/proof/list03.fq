@@ -1,15 +1,15 @@
 fixpoint "--rewrite"
 
-define ints2 (): [int] = { 
+define ints2 (): [int] = {
    Cons 1 (Cons 2 Nil)
 }
 define filter (lq1 : func(0 , [a##a29r;bool]),  lq2 : [a##a29r]) : [a##a29r] = {
   if (isNil lq2) then Nil else (
-      if (lq1 (head lq2)) 
-        then (Cons (head lq2) (filter lq1 (tail lq2))) 
+      if (lq1 (head lq2))
+        then (Cons (head lq2) (filter lq1 (tail lq2)))
         else (filter lq1 (tail lq2)))
 }
-define ints0 () : [int] = { 
+define ints0 () : [int] = {
     Cons 0 (Cons 1 (Cons 2 Nil))
 }
 define isPos (lq1 : int) : bool = {
@@ -34,12 +34,12 @@ constant head : (func(1 , [[@(0)];@(0)]))
 constant ints0  :  [int]
 constant ints2  :  [int]
 constant filter : func(1 , [func(0 , [@(0); bool]);[@(0)];[@(0)]])
-                
+
 constant isPos : func(0 , [int; bool])
 constant Cons : func(1 , [@(0);
                                         [@(0)];
-                                        [@(0)]]) 
-constant Nil : func(1 , [[@(0)]]) 
+                                        [@(0)]])
+constant Nil : func(1 , [[@(0)]])
 
 
 

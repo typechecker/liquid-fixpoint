@@ -1,7 +1,7 @@
 
 constant len : (func(2, [(@(0)  @(1)); int]))
 
-bind 1 b   : {v : [int] | true } 
+bind 1 b   : {v : [int] | true }
 bind 2 pig : {v : b     | len v = 10 }
 
 constraint:

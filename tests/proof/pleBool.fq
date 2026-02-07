@@ -3,12 +3,12 @@ fixpoint "--rewrite"
 constant geq: (func(0, [int; int; bool]))
 constant lte: (func(0, [int; int; bool]))
 
-define geq(x:int, y:int) : bool = { 
-  x >= y 
+define geq(x:int, y:int) : bool = {
+  x >= y
   }
 
-define lte(x:int, y:int) : bool = { 
-  x <= y 
+define lte(x:int, y:int) : bool = {
+  x <= y
   }
 
 expand [1 : True]

@@ -5,7 +5,7 @@ qualif Zog(v:a)  { 10 <= v }
 bind 0 x : {v : int | v = 10}
 bind 1 y : {v : int | v = 20}
 bind 2 a : {v : int | $k0    }
-      
+
 constraint:
   env [0]
   lhs {v : int | v = x}

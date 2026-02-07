@@ -1,6 +1,6 @@
 
 data Zob 0 = [
-  | boo { choo : int } 
+  | boo { choo : int }
 ]
 
 data LL 0 = [

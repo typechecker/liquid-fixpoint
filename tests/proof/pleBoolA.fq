@@ -21,20 +21,20 @@ constant isNil:  (func(1, [Vec @(0); bool]))
 
 
 define mall(f:func(0,[int;bool]), xs:Vec int) : bool = {
-    if (isNil xs) then true 
+    if (isNil xs) then true
     else (mand (f (head xs)) (mall f (tail xs)))
 }
 
-define mand(x:bool, y:bool) : bool = { 
-  x && y 
+define mand(x:bool, y:bool) : bool = {
+  x && y
   }
 
-define geq(x:int, y:int) : bool = { 
-  x >= y 
+define geq(x:int, y:int) : bool = {
+  x >= y
   }
 
-define lte(x:int, y:int) : bool = { 
-  x <= y 
+define lte(x:int, y:int) : bool = {
+  x <= y
   }
 
 expand [1 : True]

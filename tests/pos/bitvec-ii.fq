@@ -5,15 +5,15 @@
 
 // You can see the '_' as kind of applying type level arguments.
 // In the case of 'zero_extend', it determines the size of the
-// output bitvector. 
+// output bitvector.
 
-// To emulate this in liquid fixpoint, we want the output to 
-// match exactly the format of indexed identifiers of smtlib2. 
-// This comes down to defining our own '_' and parenthesizing 
+// To emulate this in liquid fixpoint, we want the output to
+// match exactly the format of indexed identifiers of smtlib2.
+// This comes down to defining our own '_' and parenthesizing
 // the expression in LF exactly as we would in the smt format.
 
 // The last trick here, is that we cannot apply a parenthesized
-// expression to an expression. For this we have defined the 
+// expression to an expression. For this we have defined the
 // additional expression 'app', which simply applies its operands.
 // 'app' is elaborated to the empty string to the SMT solver, such
 // that (app (_ zero_extend 2) bv) becomes ( (_ zero_extend 2) bv).

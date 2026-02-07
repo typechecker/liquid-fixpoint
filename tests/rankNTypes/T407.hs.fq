@@ -1,5 +1,5 @@
 
-// test is an existential data type 
+// test is an existential data type
 //  data Test a b = Test {forall z. z}
 // @(2) is not bound by the two top variables
 

@@ -15,20 +15,20 @@ constraint:
   env [ ]
   lhs {v : int | v = 0}
   rhs {v : int | $k1 }
-  id 0 
+  id 0
 
 
 constraint:
   env [ 0; 1]
   lhs {v : int | v = x + a}
   rhs {v : int | $k0}
-  id 1 
+  id 1
 
 constraint:
   env [2; 3]
   lhs {v : int | v = y + b}
   rhs {v : int | $k0}
-  id 2 
+  id 2
 
 constraint:
   env [ ]
@@ -40,7 +40,7 @@ constraint:
   env [4]
   lhs {v : int | v = c  }
   rhs {v : int | 10 <= v}
-  id 4 
+  id 4
 
 wf:
   env [ ]

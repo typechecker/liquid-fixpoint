@@ -1,11 +1,11 @@
 data Thing 0 = [
-  | mkCons { head : int } 
+  | mkCons { head : int }
 ]
-  
-bind 1 x : {v: Thing | true } 
-bind 2 y : {v: a     | true } 
 
-constraint:  
+bind 1 x : {v: Thing | true }
+bind 2 y : {v: a     | true }
+
+constraint:
   env [1; 2]
   lhs {v: int | x = y }
   rhs {v: Int | y = x }

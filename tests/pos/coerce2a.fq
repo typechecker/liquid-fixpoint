@@ -1,5 +1,5 @@
 
-bind 1 b   : {v : int | true } 
+bind 1 b   : {v : int | true }
 bind 2 pig : {v : b   | v = 10 }
 
 constraint:

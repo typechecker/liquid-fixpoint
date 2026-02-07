@@ -14,7 +14,7 @@ constraint:
   rhs {v : int | $k0[sunday := x][monday := y][ tuesday := z] }
   id 1 tag []
 
-constraint: 
+constraint:
   env [10; 11; 12]
   lhs {v : int | $k0[sunday := x][monday := y][ tuesday := z] }
   rhs {v : int | v = 10 }

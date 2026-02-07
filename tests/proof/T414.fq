@@ -1,4 +1,4 @@
-fixpoint "--rewrite" 
+fixpoint "--rewrite"
 fixpoint "--etaelim"
 
 constant g : (func(0 , [int; int; int]))

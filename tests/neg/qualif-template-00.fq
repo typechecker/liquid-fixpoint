@@ -6,8 +6,8 @@ bind 10 tuesday : {v : int | true}
 bind 1 q : {v : int | true}
 bind 2 y : {v : int | v = 10}
 bind 3 r : {v : int | true }
-bind 4 s : {v : int | $k0[monday := r] } 
-bind 5 t : {v : int | v = r + 1   }  
+bind 4 s : {v : int | $k0[monday := r] }
+bind 5 t : {v : int | v = r + 1   }
 
 
 constraint:
@@ -16,7 +16,7 @@ constraint:
   rhs {v : int | $k0[monday := q] }
   id 1 tag []
 
-constraint: 
+constraint:
   env [3; 4; 5]
   lhs {v : int | v = s + 1 }
   rhs {v : int | $k0[monday := t] }

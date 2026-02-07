@@ -481,9 +481,3 @@ wf:
   reft {VV$35$272 : GHC.Types.Bool | [$k__273]}
   // META wf : tests/pos/test000.hs:(9,1)-(11,23)
 
-
-
-
-
-
-

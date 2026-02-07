@@ -33,7 +33,7 @@ expand [23 : True]
 
 
 bind 137 l : {VV##890 : [a##a2pJ] | [((len VV##890) > 0); ((is$Cons VV##890) <=> true); ((is$Nil VV##890) <=> false)]}
-bind 138 d : {p : (IndPalindrome.Pal a##a2pJ) | [((prop p) = (IndPalindrome.Pal l)); 
+bind 138 d : {p : (IndPalindrome.Pal a##a2pJ) | [((prop p) = (IndPalindrome.Pal l));
                                                  ((is$IndPalindrome.Pals p) <=> false);
                                                  ((is$IndPalindrome.Pal0 p) <=> true);
                                                  ((prop p) = (IndPalindrome.Pal Nil));
@@ -436,5 +436,4 @@ distinct GHC.Classes.C$58$Eq : (func(1 , [func(0 , [@(0);
                                                     bool]);
                                           func(0 , [@(0); @(0); bool]);
                                           (GHC.Classes.Eq @(0))]))
-
 

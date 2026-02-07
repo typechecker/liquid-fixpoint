@@ -2,12 +2,12 @@ fixpoint "--rewrite"
 
 data List 0 = [
   | VNil  { }
-  | VCons { head: Int, tail : List} 
+  | VCons { head: Int, tail : List}
 ]
 
 define concat (left : List, right : List) : List = {
-  if (is$VNil left) then 
-    right else 
+  if (is$VNil left) then
+    right else
   (VCons (head left) (concat (tail left) right))
 }
 

@@ -12,7 +12,7 @@ bind 3 b : {v: int | $k0[x:= a]}
 constraint:
   env [ 1 ]
   lhs {v : alpha  | v = x }
-  rhs {v : alpha  | $k0   } 
+  rhs {v : alpha  | $k0   }
   id 1 tag []
 
 constraint:

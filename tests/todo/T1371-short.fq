@@ -1,4 +1,4 @@
-// minimized version of LH #1371 
+// minimized version of LH #1371
 
 fixpoint "--rewrite"
 
@@ -9,8 +9,8 @@ data Thing 0 = [
 
 // ACTUAL
 define killer (arg1 : Thing,  arg2 : Thing) : Thing = {
-  if (is$N arg1) 
-    then (if (is$N arg2) then (arg1) else (Op (opLeft arg2) (killer (N (eNum arg1)) (opRight arg2)))) 
+  if (is$N arg1)
+    then (if (is$N arg2) then (arg1) else (Op (opLeft arg2) (killer (N (eNum arg1)) (opRight arg2))))
     else (Op (opLeft arg1) (killer (opRight arg1) arg2))
 }
 
@@ -59,8 +59,8 @@ bind 50 dXY : {v : Thing | [((is$Op v) <=> false);
 
 bind 60 dXZ : {v : Thing | [((1 + 2) = 3);
                            (v = (killer dXY e2));
-                           (v = (if (is$N dXY) 
-                                    then (Op (opLeft e2) (killer (N (eNum dXY)) (opRight e2))) 
+                           (v = (if (is$N dXY)
+                                    then (Op (opLeft e2) (killer (N (eNum dXY)) (opRight e2)))
                                     else (Op (opLeft dXY) (killer (opRight dXY) e2))));
                            (v = (killer dXY e2))]}
 

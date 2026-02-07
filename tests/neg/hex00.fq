@@ -1,5 +1,5 @@
 bind 0 a : {a : int | a = 0x8 }
-bind 1 b : {b : int | b = 0x7 } 
+bind 1 b : {b : int | b = 0x7 }
 
 constraint:
   env [0; 1]

@@ -16,4 +16,3 @@ constraint:
   rhs {v : int | (sum 5) = 15 }
   id 1 tag []
 
-

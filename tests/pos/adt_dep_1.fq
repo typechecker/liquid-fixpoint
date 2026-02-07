@@ -5,7 +5,7 @@ data LL 0 = [
 ]
 
 data Bob 0 = [
-  | boo { choo : int } 
+  | boo { choo : int }
 ]
 
 constraint:

@@ -38,8 +38,8 @@ constraint:
   // META constraint id 24 : tests/pos/T2535.hs:11:1-9
 
 
-// unless the sort of application is propagated in both the function and the argument 
+// unless the sort of application is propagated in both the function and the argument
 // as fixed in PR: https://github.com/ucsd-progsys/liquid-fixpoint/pull/753
-// the above query crashes with 
+// the above query crashes with
 // Crash!: :1:1-1:1: Error
 //   crash: SMTLIB2 respSat = Error "line 3 column 13267: Sorts (AB Int (T Int)) and (AB Int Int) are incompatible"

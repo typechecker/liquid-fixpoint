@@ -20,4 +20,3 @@ constraint:
   rhs {v:int | [false]}
   id 1 tag []
 
-

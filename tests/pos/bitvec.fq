@@ -85,5 +85,3 @@ constraint:
   rhs {v : (BitVec Size1) | [ v = (lit "#b1" (BitVec Size1)) ] }
   id 9 tag []
 
-
-

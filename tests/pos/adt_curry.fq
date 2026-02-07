@@ -1,10 +1,10 @@
 fixpoint "--allowho"
 
 data Vec 1 = [
-  | VCons { head : @(0) } 
+  | VCons { head : @(0) }
 ]
 
-bind 0 foo : {v: Vec (func(0, [int; int])) | true} 
+bind 0 foo : {v: Vec (func(0, [int; int])) | true}
 
 constraint:
   env [0]

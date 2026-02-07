@@ -1,11 +1,11 @@
 fixpoint "--rewrite"
 
-data Blob 0 = [ 
-  | VBlob { vgoo : Int } 
+data Blob 0 = [
+  | VBlob { vgoo : Int }
   ]
 
 data Vec 1 = [
-  | VCons { vhead : @(0) } 
+  | VCons { vhead : @(0) }
 ]
 
 constant len : (func(1, [(Vec @(0)); int]))
@@ -18,7 +18,7 @@ match hen VBlob z  { 10  }
 
 match len VCons x  { hen (foo (VBlob 12)) }
 
-bind 0 thing : {v: int | true} 
+bind 0 thing : {v: int | true}
 
 constraint:
   env [0]

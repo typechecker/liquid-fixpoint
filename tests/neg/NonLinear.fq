@@ -11,14 +11,14 @@ bind 6 bob      : {v: int | [$k0[vk01 := argBob][vk02 := v]] }
 bind 10 vk01   : {v: int | []}
 
 constraint:
-  env [1; 2] 
-  lhs {v1 : int | [v1 = pigOut]} 
+  env [1; 2]
+  lhs {v1 : int | [v1 = pigOut]}
   rhs {v1 : int | [$k0[vk01 := pig][vk02 := v1]]}
   id 1 tag [2]
 
 constraint:
-  env [3; 4; 5; 6] 
-  lhs {v2 : int | []} 
+  env [3; 4; 5; 6]
+  lhs {v2 : int | []}
   rhs {v2 : int | [false]}
   id 2 tag [2]
 

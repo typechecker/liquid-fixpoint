@@ -1,4 +1,4 @@
-// minimal reproduction of LH #1409. UNSAFE with --rewrite; SAFE with --rewrite --noincrple 
+// minimal reproduction of LH #1409. UNSAFE with --rewrite; SAFE with --rewrite --noincrple
 fixpoint "--rewrite"
 
 data Peano 0 = [
