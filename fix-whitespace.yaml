@@ -46,6 +46,7 @@ included-files:
   - "*.cpp"
   - "*.css"
   - "*.dhall"
+  - "*.fq"
   - "*.h"
   - "*.hs"
   - "*.hs-boot"
@@ -81,5 +82,6 @@ excluded-files:
   - Makefile
 
 # Test files
+  - tests/horn/**/.liquid/*.fq
   - tests/horn/**/.liquid/*.json
 
